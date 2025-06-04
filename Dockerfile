@@ -1,7 +1,13 @@
-# Dockerfile for meeting-bot-backend
 FROM node:18
+
+# Install system packages
+RUN apt-get update && \
+    apt-get install -y ffmpeg xvfb pulseaudio && \
+    apt-get clean
+
 WORKDIR /app
-COPY package.json ./
-RUN npm install
 COPY . .
-CMD ["npm", "run", "start"]
+
+RUN npm install
+
+CMD xvfb-run --server-args="-screen 0 1024x768x24" npm run start

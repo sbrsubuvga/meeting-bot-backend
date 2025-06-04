@@ -5,6 +5,9 @@
   "scripts": {
     "start": "ts-node src/main.ts"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "@nestjs/common": "^11.1.2",
+    "class-validator": "^0.14.2",
+    "puppeteer": "^24.10.0"
+  }
 }
