@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppService } from './app.service';
 import { MeetingService } from './meeting/meeting.service';
 import { RecorderService } from './recorder/recorder.service';
 import { ChatGptService } from './summarizer/chatgpt.service';
