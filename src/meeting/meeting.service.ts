@@ -32,7 +32,7 @@ export class MeetingService {
 
       // Store or return
       console.log({ summary });
-    }, 1000 * 60 * 30); // 30 mins
+    }, 1000 * 60 * 1); // 30 mins
 
     return { status: 'recording_started', meetingId };
   }
