@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "main": "dist/main.js",
   "scripts": {
-    "start": "ts-node src/main.ts"
+    "start": "ts-node src/main.ts",
+    "start:dev": "nest start --watch"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.2",
     "@nestjs/config": "^4.0.2",
-    "@nestjs/core": "^10.4.18",
+    "@nestjs/core": "^11.1.2",
     "@nestjs/platform-express": "^11.1.2",
     "class-validator": "^0.14.2",
-    "puppeteer": "^24.10.0"
+    "puppeteer": "^24.10.0",
+    "reflect-metadata": "^0.1.13"
   }
 }
